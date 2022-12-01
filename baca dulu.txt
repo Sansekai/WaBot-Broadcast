@@ -1,0 +1,9 @@
+Menunya cuma ada 3
+- bcgrup
+- bcall
+- bclist
+atau bisa ketik /menu buat liat menunya.
+
+Untuk fitur bclist, kalian bisa menambahkan list nomornya di file list.json
+contoh penginputan nomorya: ["6281259261277","62812710385261","6289530877869"]
+Ingat ya seperti di atas jangan sampai salah, kalau salah botnya gak bisa jalan.
