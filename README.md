@@ -20,6 +20,7 @@ Saya sudah mencoba menginstallnya di Termux namun terjadi error.
 
 ## Note
 - Jangan lupa ganti nomor owner di file [config.js](https://github.com/Sansekai/WaBot-Broadcast/blob/5365baa4fdcd8a27b1160c0dcfdb3f6740655607/config.js#L23)
+- Atur delay mengirim tiap pesannya untuk mengurangi resiko banned di file [config.js](https://github.com/Sansekai/WaBot-Broadcast/blob/72ab9aa088aa61c270b5b8c9feec6d68733b5d8c/config.js#L24)
 - Untuk fitur bclist, kalian bisa menambahkan list nomornya di file [list.json](https://github.com/Sansekai/WaBot-Broadcast/blob/main/list.json)<br>
 contoh penginputan nomorya: ```["6281259261277","62812710385261","6289530877869"]```<br>
 Ingat ya seperti di atas jangan sampai salah, kalau salah botnya gak bisa jalan.
