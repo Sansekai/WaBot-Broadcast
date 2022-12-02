@@ -8,15 +8,22 @@
 Install [NodeJS](https://nodejs.org/en/download/)
  dan [Git Bash](https://git-scm.com/downloads) terlebih dahulu
 ```bash
-$ git https://github.com/Sansekai/WaBot-Broadcast
+$ git clone https://github.com/Sansekai/WaBot-Broadcast
 $ cd WaBot-Broadcast
 $ npm install
 $ node index.js
 ```
-**Install on Termux ❌**
+**Install on Termux ✅**
 
-Saya sudah mencoba menginstallnya di Termux namun terjadi error.
-<br>Kalian bisa mengaturnya sendiri agar tidak error.
+Silahkan install manual ```node_modules``` terlebih dahulu, karena di termux saat install otomatis melalui ```npm install``` terjadi error.
+<br>Link ```node_modules```: [Klik Disini](https://drive.google.com/file/d/16CV6KWAKdo82LlNoOGMeZS8trlAw4Nsy/view?usp=drivesdk)
+```bash
+$ pkg install git nodejs -y
+$ git clone https://github.com/Sansekai/WaBot-Broadcast
+$ cd WaBot-Broadcast
+$ node index.js
+```
+Sesusah menginstall file node_modules, silahkan extract file ```node_modules.zip``` dan taruh di folder WaBot-Broadcast.
 
 ## Note
 - Jangan lupa ganti nomor owner di file [config.js](https://github.com/Sansekai/WaBot-Broadcast/blob/85aae7903ed8578aca47fc102cae212bcb5f2a04/config.js#L23)
