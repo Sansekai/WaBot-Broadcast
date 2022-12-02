@@ -51,7 +51,6 @@ module.exports = sansekai = async (client, m, chatUpdate, store) => {
         const reply = m.reply
         const sender = m.sender
         const mek = chatUpdate.messages[0]
-        const delayy = 2000 //Setting delaynya disini
 	
         // Group
         const groupMetadata = m.isGroup ? await client.groupMetadata(m.chat).catch(e => {}) : ''
