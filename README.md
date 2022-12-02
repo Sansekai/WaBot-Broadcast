@@ -21,9 +21,13 @@ Silahkan install manual ```node_modules``` terlebih dahulu, karena di termux saa
 $ pkg install git nodejs -y
 $ git clone https://github.com/Sansekai/WaBot-Broadcast
 $ cd WaBot-Broadcast
-$ node index.js
 ```
 Sesusah menginstall file node_modules, silahkan extract file ```node_modules.zip``` dan taruh di folder WaBot-Broadcast.
+
+**Run**
+```bash
+$ node index.js
+```
 
 ## Note
 - Jangan lupa ganti nomor owner di file [config.js](https://github.com/Sansekai/WaBot-Broadcast/blob/85aae7903ed8578aca47fc102cae212bcb5f2a04/config.js#L23)
