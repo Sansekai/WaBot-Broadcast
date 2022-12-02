@@ -85,7 +85,7 @@ module.exports = sansekai = async (client, m, chatUpdate, store) => {
                     let anu = groups.map(v => v.id)
                     m.reply(`Mengirim Broadcast Ke ${anu.length} Group Chat, Waktu Selesai ${anu.length * 1.5} detik`)
                     for (let i of anu) {
-                        await sleep(1500)
+                        await sleep(2000)
                         let txt = `「 Broadcast 」\n\n${text}`
                         client.sendText(i, txt)
                         }
@@ -98,7 +98,7 @@ module.exports = sansekai = async (client, m, chatUpdate, store) => {
                     let anu = await store.chats.all().map(v => v.id)
                     m.reply(`Mengirim Broadcast Ke ${anu.length} Chat\nWaktu Selesai ${anu.length * 1.5} detik`)
                     for (let yoi of anu) {
-                        await sleep(1500)
+                        await sleep(2000)
                         let txt = `「 Broadcast 」\n\n${text}`
                         client.sendText(yoi, txt)
                     }
@@ -112,6 +112,7 @@ module.exports = sansekai = async (client, m, chatUpdate, store) => {
                     if (!text) throw `Menu ini akan mengirim broadcast ke nomor yang sudah kamu list di file list.json.\n\nExample : ${prefix + command} pengumuman besok libur`
                     m.reply(`Mengirim Broadcast Ke ${list.length} Chat\nWaktu Selesai ${list.length * 1.5} detik`)
                     for (let lchat of list) {
+                        await sleep(2000)
                         let txt = `「 Broadcast 」\n\n${text}`
                         let tambahs = lchat+'@s.whatsapp.net'
                         let rplc = tambahs.replace('+', '').replace('+', '').replace('-', '').replace('-', '').replace('-', '').replace('-', '').replace('+', '').replace(' ', '').replace(' ', '')
