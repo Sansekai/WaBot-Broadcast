@@ -1,0 +1,22 @@
+Menunya cuma ada 3
+- bcgrup
+- bcall
+- bclist
+atau bisa ketik /menu buat liat menunya.
+
+- Untuk fitur bclist, kalian bisa menambahkan list nomornya di file list.json
+contoh penginputan nomorya: ["6281259261277","62812710385261","6289530877869"]
+Ingat ya seperti di atas jangan sampai salah, kalau salah botnya gak bisa jalan.
+
+- Kalau misalnya pas pakai fitur yang keluar malah ini:
+
+"⛔ *AKSES DI TOLAK* ⛔
+
+Perintah ini hanya bisa digunakan oleh orang ganteng."
+
+Coba ke file config.js terus di bagian global.owner = ['6285157729639'] ganti jadi nomor wa mu (bukan nomor bot)
+
+- Atur delay mengirim tiap pesannya untuk mengurangi resiko banned di file config.js di bagian global.delayy = 2000
+
+2000 itu 2 detik
+10000 itu 10 detik
