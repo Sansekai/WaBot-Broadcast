@@ -1,7 +1,7 @@
 {
-  "name": "WaBot-Broadcast",
+  "name": "Wa-OpenAI",
   "version": "1.2.3",
-  "description": "WhatsApp Bot Broadcast Using Lib Baileys Multi Device",
+  "description": "WhatsApp Bot OpenAI Using Lib Baileys Multi Device",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
@@ -9,8 +9,8 @@
   },
   "keywords": [
     "termux",
-    "whatsapp-Broadcast",
-    "whatsapp-bot-broadcast",
+    "whatsapp-openai",
+    "whatsapp-openai",
     "whatsapp-bot",
     "whatsapp-baileys",
     "baileys-md",
@@ -22,7 +22,7 @@
   "author": "Yusril",
   "license": "MIT",
   "dependencies": {
-    "@adiwajshing/baileys": "^4.0.1",
+    "@adiwajshing/baileys": "4.4.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^0.24.0",
@@ -44,6 +44,7 @@
     "mongoose": "^6.2.1",
     "node-cron": "^3.0.0",
     "node-fetch": "^2.6.1",
+    "openai": "^3.1.0",
     "os": "^0.1.2",
     "parse-ms-commonjs": "^1.1.0",
     "path": "^0.12.7",
@@ -59,10 +60,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sansekai/WaBot-Broadcast.git"
+    "url": "git+https://github.com/Sansekai/Wa-OpenAI.git"
   },
   "bugs": {
-    "url": "https://github.com/Sansekai/WaBot-Broadcast/issues"
+    "url": "https://github.com/Sansekai/Wa-OpenAI/issues"
   },
-  "homepage": "https://github.com/Sansekai/WaBot-Broadcast#readme"
+  "homepage": "https://github.com/Sansekai/Wa-OpenAI#readme"
 }

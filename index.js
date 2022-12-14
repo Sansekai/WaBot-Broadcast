@@ -64,7 +64,7 @@ if (global.db) setInterval(async () => {
 async function startHisoka() {
     const { version, isLatest } = await fetchLatestBaileysVersion()
 	console.log(`using WA v${version.join('.')}, isLatest: ${isLatest}`)
-    console.log(color(figlet.textSync('Wabc by Yusril', {
+    console.log(color(figlet.textSync('Wa-OpenAI', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
@@ -74,7 +74,7 @@ async function startHisoka() {
     const client = sansekaiConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Bot Broadcast - Sansekai','Safari','1.0.0'],
+        browser: ['Wa-OpenAI - Sansekai','Safari','1.0.0'],
         auth: state
     })
 
