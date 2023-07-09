@@ -16,7 +16,7 @@ $ node index.js
 **Install on Termux ✅**
 
 Silahkan install manual ```node_modules``` terlebih dahulu, karena di termux saat install otomatis melalui ```npm install``` terjadi error.
-<br>Link ```node_modules```: [Klik Disini](https://drive.google.com/file/d/16CV6KWAKdo82LlNoOGMeZS8trlAw4Nsy/view?usp=drivesdk)
+<br>Link ```node_modules```: [Klik Disini](https://drive.google.com/file/d/1z2qwE4FIVKgpLyQvXTbosITJWIZoRf1I/view?usp=drive_link)
 ```bash
 $ pkg install git nodejs -y
 $ git clone https://github.com/Sansekai/WaBot-Broadcast
