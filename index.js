@@ -1,7 +1,18 @@
 const sessionName = "yusril";
 const donet = "https://saweria.co/sansekai";
 const owner = ["6287878817169"]; // Put your number here ex: ["62xxxxxxxxx"]
-const { default: sansekaiConnect, useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, makeInMemoryStore, jidDecode, proto, getContentType } = require("@adiwajshing/baileys");
+const {
+  default: sansekaiConnect,
+  useMultiFileAuthState,
+  DisconnectReason,
+  fetchLatestBaileysVersion,
+  makeInMemoryStore,
+  jidDecode,
+  proto,
+  getContentType,
+  Browsers, 
+  fetchLatestWaWebVersion
+} = require("@adiwajshing/baileys");
 const pino = require("pino");
 const { Boom } = require("@hapi/boom");
 const fs = require("fs");
@@ -126,7 +137,7 @@ function smsg(conn, m, store) {
 
 async function startHisoka() {
   const { state, saveCreds } = await useMultiFileAuthState(`./${sessionName ? sessionName : "session"}`);
-  const { version, isLatest } = await fetchLatestBaileysVersion();
+  const { version, isLatest } = await fetchLatestWaWebVersion().catch(() => fetchLatestBaileysVersion());
   console.log(`using WA v${version.join(".")}, isLatest: ${isLatest}`);
   console.log(
     color(
@@ -143,7 +154,7 @@ async function startHisoka() {
   const client = sansekaiConnect({
     logger: pino({ level: "silent" }),
     printQRInTerminal: true,
-    browser: ["WaBot-Broadcast - Sansekai", "Safari", "5.1.7"],
+    browser: Browsers.macOS('Desktop'),
     auth: state,
   });
 
